@@ -1,0 +1,162 @@
+2018-03-25T05:30:58.142Z - info: Server started at port: 8091 with url: http://localhost:8091/
+2018-03-25T05:31:06.847Z - error: { [CustomError: End point not found.]
+  errorCode: 404,
+  name: 'CustomError',
+  message: 'End point not found.',
+  extra: undefined,
+  isNotReThrow: true,
+  url: 'http://localhost:8091/favicon.png' } url=http://localhost:8091/favicon.png, errorData=undefined, stact=CustomError: End point not found.
+    at /home/sangeet/flash-cards-master/app.js:115:15
+    at Layer.handle [as handle_request] (/home/sangeet/flash-cards-master/node_modules/express/lib/router/layer.js:95:5)
+    at trim_prefix (/home/sangeet/flash-cards-master/node_modules/express/lib/router/index.js:317:13)
+    at /home/sangeet/flash-cards-master/node_modules/express/lib/router/index.js:284:7
+    at Function.process_params (/home/sangeet/flash-cards-master/node_modules/express/lib/router/index.js:335:12)
+    at next (/home/sangeet/flash-cards-master/node_modules/express/lib/router/index.js:275:10)
+    at /home/sangeet/flash-cards-master/node_modules/express/lib/router/index.js:635:15
+    at next (/home/sangeet/flash-cards-master/node_modules/express/lib/router/index.js:260:14)
+    at Function.handle (/home/sangeet/flash-cards-master/node_modules/express/lib/router/index.js:174:3)
+    at router (/home/sangeet/flash-cards-master/node_modules/express/lib/router/index.js:47:12)
+    at Layer.handle [as handle_request] (/home/sangeet/flash-cards-master/node_modules/express/lib/router/layer.js:95:5)
+    at trim_prefix (/home/sangeet/flash-cards-master/node_modules/express/lib/router/index.js:317:13)
+    at /home/sangeet/flash-cards-master/node_modules/express/lib/router/index.js:284:7
+    at Function.process_params (/home/sangeet/flash-cards-master/node_modules/express/lib/router/index.js:335:12)
+    at next (/home/sangeet/flash-cards-master/node_modules/express/lib/router/index.js:275:10)
+    at /home/sangeet/flash-cards-master/node_modules/express-winston/index.js:327:9
+{"res":{"statusCode":404},"req":{"url":"/favicon.png","headers":{"host":"localhost:8091","connection":"keep-alive","user-agent":"Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/60.0.3112.113 Safari/537.36","accept":"image/webp,image/apng,image/*,*/*;q=0.8","dnt":"1","referer":"http://localhost:8091/","accept-encoding":"gzip, deflate, br","accept-language":"en-GB,en-US;q=0.8,en;q=0.6","cookie":"username-localhost-8888=\"2|1:0|10:1521086291|23:username-localhost-8888|44:NGQyZTVlMzg3MjUxNDBjZGIzZTRmMWM0YTkyYzZiNzQ=|743ef1907d37d7e063d74303092f064933c39dfc60d0dc29e1f518f560dd46fd\""},"method":"GET","httpVersion":"1.1","originalUrl":"/favicon.png","query":{}},"responseTime":17,"level":"info","message":"HTTP GET /favicon.png","timestamp":"2018-03-25T05:31:06.851Z"}
+2018-03-25T05:31:32.561Z - error: { [CustomError: Incorrect username and password]
+  errorCode: 401,
+  name: 'CustomError',
+  message: 'Incorrect username and password',
+  extra: { metaData: undefined } } , metaData=undefined, stact=CustomError: Incorrect username and password
+    at authenticate (/home/sangeet/flash-cards-master/controllers/v1/auth_controller.js:21:50)
+    at Layer.handle [as handle_request] (/home/sangeet/flash-cards-master/node_modules/express/lib/router/layer.js:95:5)
+    at next (/home/sangeet/flash-cards-master/node_modules/express/lib/router/route.js:137:13)
+    at Route.dispatch (/home/sangeet/flash-cards-master/node_modules/express/lib/router/route.js:112:3)
+    at Layer.handle [as handle_request] (/home/sangeet/flash-cards-master/node_modules/express/lib/router/layer.js:95:5)
+    at /home/sangeet/flash-cards-master/node_modules/express/lib/router/index.js:281:22
+    at Function.process_params (/home/sangeet/flash-cards-master/node_modules/express/lib/router/index.js:335:12)
+    at next (/home/sangeet/flash-cards-master/node_modules/express/lib/router/index.js:275:10)
+    at Function.handle (/home/sangeet/flash-cards-master/node_modules/express/lib/router/index.js:174:3)
+    at router (/home/sangeet/flash-cards-master/node_modules/express/lib/router/index.js:47:12)
+    at Layer.handle [as handle_request] (/home/sangeet/flash-cards-master/node_modules/express/lib/router/layer.js:95:5)
+    at trim_prefix (/home/sangeet/flash-cards-master/node_modules/express/lib/router/index.js:317:13)
+    at /home/sangeet/flash-cards-master/node_modules/express/lib/router/index.js:284:7
+    at Function.process_params (/home/sangeet/flash-cards-master/node_modules/express/lib/router/index.js:335:12)
+    at next (/home/sangeet/flash-cards-master/node_modules/express/lib/router/index.js:275:10)
+    at /home/sangeet/flash-cards-master/node_modules/express/lib/router/index.js:635:15
+{"res":{"statusCode":401},"req":{"url":"/api/v1/authenticate","headers":{"host":"localhost:8091","connection":"keep-alive","content-length":"38","accept":"application/json, text/plain, */*","origin":"http://localhost:8091","user-agent":"Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/60.0.3112.113 Safari/537.36","content-type":"application/json;charset=UTF-8","dnt":"1","referer":"http://localhost:8091/","accept-encoding":"gzip, deflate, br","accept-language":"en-GB,en-US;q=0.8,en;q=0.6","cookie":"username-localhost-8888=\"2|1:0|10:1521086291|23:username-localhost-8888|44:NGQyZTVlMzg3MjUxNDBjZGIzZTRmMWM0YTkyYzZiNzQ=|743ef1907d37d7e063d74303092f064933c39dfc60d0dc29e1f518f560dd46fd\""},"method":"POST","httpVersion":"1.1","originalUrl":"/api/v1/authenticate","query":{}},"responseTime":1,"level":"info","message":"HTTP POST /api/v1/authenticate","timestamp":"2018-03-25T05:31:32.562Z"}
+2018-03-25T05:31:34.502Z - error: { [CustomError: Incorrect username and password]
+  errorCode: 401,
+  name: 'CustomError',
+  message: 'Incorrect username and password',
+  extra: { metaData: undefined } } , metaData=undefined, stact=CustomError: Incorrect username and password
+    at authenticate (/home/sangeet/flash-cards-master/controllers/v1/auth_controller.js:21:50)
+    at Layer.handle [as handle_request] (/home/sangeet/flash-cards-master/node_modules/express/lib/router/layer.js:95:5)
+    at next (/home/sangeet/flash-cards-master/node_modules/express/lib/router/route.js:137:13)
+    at Route.dispatch (/home/sangeet/flash-cards-master/node_modules/express/lib/router/route.js:112:3)
+    at Layer.handle [as handle_request] (/home/sangeet/flash-cards-master/node_modules/express/lib/router/layer.js:95:5)
+    at /home/sangeet/flash-cards-master/node_modules/express/lib/router/index.js:281:22
+    at Function.process_params (/home/sangeet/flash-cards-master/node_modules/express/lib/router/index.js:335:12)
+    at next (/home/sangeet/flash-cards-master/node_modules/express/lib/router/index.js:275:10)
+    at Function.handle (/home/sangeet/flash-cards-master/node_modules/express/lib/router/index.js:174:3)
+    at router (/home/sangeet/flash-cards-master/node_modules/express/lib/router/index.js:47:12)
+    at Layer.handle [as handle_request] (/home/sangeet/flash-cards-master/node_modules/express/lib/router/layer.js:95:5)
+    at trim_prefix (/home/sangeet/flash-cards-master/node_modules/express/lib/router/index.js:317:13)
+    at /home/sangeet/flash-cards-master/node_modules/express/lib/router/index.js:284:7
+    at Function.process_params (/home/sangeet/flash-cards-master/node_modules/express/lib/router/index.js:335:12)
+    at next (/home/sangeet/flash-cards-master/node_modules/express/lib/router/index.js:275:10)
+    at /home/sangeet/flash-cards-master/node_modules/express/lib/router/index.js:635:15
+{"res":{"statusCode":401},"req":{"url":"/api/v1/authenticate","headers":{"host":"localhost:8091","connection":"keep-alive","content-length":"38","accept":"application/json, text/plain, */*","origin":"http://localhost:8091","user-agent":"Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/60.0.3112.113 Safari/537.36","content-type":"application/json;charset=UTF-8","dnt":"1","referer":"http://localhost:8091/","accept-encoding":"gzip, deflate, br","accept-language":"en-GB,en-US;q=0.8,en;q=0.6","cookie":"username-localhost-8888=\"2|1:0|10:1521086291|23:username-localhost-8888|44:NGQyZTVlMzg3MjUxNDBjZGIzZTRmMWM0YTkyYzZiNzQ=|743ef1907d37d7e063d74303092f064933c39dfc60d0dc29e1f518f560dd46fd\""},"method":"POST","httpVersion":"1.1","originalUrl":"/api/v1/authenticate","query":{}},"responseTime":2,"level":"info","message":"HTTP POST /api/v1/authenticate","timestamp":"2018-03-25T05:31:34.504Z"}
+2018-03-25T05:31:41.461Z - error: { [CustomError: Incorrect username and password]
+  errorCode: 401,
+  name: 'CustomError',
+  message: 'Incorrect username and password',
+  extra: { metaData: undefined } } , metaData=undefined, stact=CustomError: Incorrect username and password
+    at authenticate (/home/sangeet/flash-cards-master/controllers/v1/auth_controller.js:21:50)
+    at Layer.handle [as handle_request] (/home/sangeet/flash-cards-master/node_modules/express/lib/router/layer.js:95:5)
+    at next (/home/sangeet/flash-cards-master/node_modules/express/lib/router/route.js:137:13)
+    at Route.dispatch (/home/sangeet/flash-cards-master/node_modules/express/lib/router/route.js:112:3)
+    at Layer.handle [as handle_request] (/home/sangeet/flash-cards-master/node_modules/express/lib/router/layer.js:95:5)
+    at /home/sangeet/flash-cards-master/node_modules/express/lib/router/index.js:281:22
+    at Function.process_params (/home/sangeet/flash-cards-master/node_modules/express/lib/router/index.js:335:12)
+    at next (/home/sangeet/flash-cards-master/node_modules/express/lib/router/index.js:275:10)
+    at Function.handle (/home/sangeet/flash-cards-master/node_modules/express/lib/router/index.js:174:3)
+    at router (/home/sangeet/flash-cards-master/node_modules/express/lib/router/index.js:47:12)
+    at Layer.handle [as handle_request] (/home/sangeet/flash-cards-master/node_modules/express/lib/router/layer.js:95:5)
+    at trim_prefix (/home/sangeet/flash-cards-master/node_modules/express/lib/router/index.js:317:13)
+    at /home/sangeet/flash-cards-master/node_modules/express/lib/router/index.js:284:7
+    at Function.process_params (/home/sangeet/flash-cards-master/node_modules/express/lib/router/index.js:335:12)
+    at next (/home/sangeet/flash-cards-master/node_modules/express/lib/router/index.js:275:10)
+    at /home/sangeet/flash-cards-master/node_modules/express/lib/router/index.js:635:15
+{"res":{"statusCode":401},"req":{"url":"/api/v1/authenticate","headers":{"host":"localhost:8091","connection":"keep-alive","content-length":"38","accept":"application/json, text/plain, */*","origin":"http://localhost:8091","user-agent":"Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/60.0.3112.113 Safari/537.36","content-type":"application/json;charset=UTF-8","dnt":"1","referer":"http://localhost:8091/","accept-encoding":"gzip, deflate, br","accept-language":"en-GB,en-US;q=0.8,en;q=0.6","cookie":"username-localhost-8888=\"2|1:0|10:1521086291|23:username-localhost-8888|44:NGQyZTVlMzg3MjUxNDBjZGIzZTRmMWM0YTkyYzZiNzQ=|743ef1907d37d7e063d74303092f064933c39dfc60d0dc29e1f518f560dd46fd\""},"method":"POST","httpVersion":"1.1","originalUrl":"/api/v1/authenticate","query":{}},"responseTime":2,"level":"info","message":"HTTP POST /api/v1/authenticate","timestamp":"2018-03-25T05:31:41.463Z"}
+2018-03-25T05:32:51.709Z - error: { [CustomError: Incorrect username and password]
+  errorCode: 401,
+  name: 'CustomError',
+  message: 'Incorrect username and password',
+  extra: { metaData: undefined } } , metaData=undefined, stact=CustomError: Incorrect username and password
+    at authenticate (/home/sangeet/flash-cards-master/controllers/v1/auth_controller.js:21:50)
+    at Layer.handle [as handle_request] (/home/sangeet/flash-cards-master/node_modules/express/lib/router/layer.js:95:5)
+    at next (/home/sangeet/flash-cards-master/node_modules/express/lib/router/route.js:137:13)
+    at Route.dispatch (/home/sangeet/flash-cards-master/node_modules/express/lib/router/route.js:112:3)
+    at Layer.handle [as handle_request] (/home/sangeet/flash-cards-master/node_modules/express/lib/router/layer.js:95:5)
+    at /home/sangeet/flash-cards-master/node_modules/express/lib/router/index.js:281:22
+    at Function.process_params (/home/sangeet/flash-cards-master/node_modules/express/lib/router/index.js:335:12)
+    at next (/home/sangeet/flash-cards-master/node_modules/express/lib/router/index.js:275:10)
+    at Function.handle (/home/sangeet/flash-cards-master/node_modules/express/lib/router/index.js:174:3)
+    at router (/home/sangeet/flash-cards-master/node_modules/express/lib/router/index.js:47:12)
+    at Layer.handle [as handle_request] (/home/sangeet/flash-cards-master/node_modules/express/lib/router/layer.js:95:5)
+    at trim_prefix (/home/sangeet/flash-cards-master/node_modules/express/lib/router/index.js:317:13)
+    at /home/sangeet/flash-cards-master/node_modules/express/lib/router/index.js:284:7
+    at Function.process_params (/home/sangeet/flash-cards-master/node_modules/express/lib/router/index.js:335:12)
+    at next (/home/sangeet/flash-cards-master/node_modules/express/lib/router/index.js:275:10)
+    at /home/sangeet/flash-cards-master/node_modules/express/lib/router/index.js:635:15
+{"res":{"statusCode":401},"req":{"url":"/api/v1/authenticate","headers":{"host":"localhost:8091","connection":"keep-alive","content-length":"45","accept":"application/json, text/plain, */*","origin":"http://localhost:8091","user-agent":"Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/60.0.3112.113 Safari/537.36","content-type":"application/json;charset=UTF-8","dnt":"1","referer":"http://localhost:8091/","accept-encoding":"gzip, deflate, br","accept-language":"en-GB,en-US;q=0.8,en;q=0.6","cookie":"username-localhost-8888=\"2|1:0|10:1521086291|23:username-localhost-8888|44:NGQyZTVlMzg3MjUxNDBjZGIzZTRmMWM0YTkyYzZiNzQ=|743ef1907d37d7e063d74303092f064933c39dfc60d0dc29e1f518f560dd46fd\""},"method":"POST","httpVersion":"1.1","originalUrl":"/api/v1/authenticate","query":{}},"responseTime":1,"level":"info","message":"HTTP POST /api/v1/authenticate","timestamp":"2018-03-25T05:32:51.710Z"}
+2018-03-25T05:33:05.199Z - error: { [CustomError: Incorrect username and password]
+  errorCode: 401,
+  name: 'CustomError',
+  message: 'Incorrect username and password',
+  extra: { metaData: undefined } } , metaData=undefined, stact=CustomError: Incorrect username and password
+    at authenticate (/home/sangeet/flash-cards-master/controllers/v1/auth_controller.js:21:50)
+    at Layer.handle [as handle_request] (/home/sangeet/flash-cards-master/node_modules/express/lib/router/layer.js:95:5)
+    at next (/home/sangeet/flash-cards-master/node_modules/express/lib/router/route.js:137:13)
+    at Route.dispatch (/home/sangeet/flash-cards-master/node_modules/express/lib/router/route.js:112:3)
+    at Layer.handle [as handle_request] (/home/sangeet/flash-cards-master/node_modules/express/lib/router/layer.js:95:5)
+    at /home/sangeet/flash-cards-master/node_modules/express/lib/router/index.js:281:22
+    at Function.process_params (/home/sangeet/flash-cards-master/node_modules/express/lib/router/index.js:335:12)
+    at next (/home/sangeet/flash-cards-master/node_modules/express/lib/router/index.js:275:10)
+    at Function.handle (/home/sangeet/flash-cards-master/node_modules/express/lib/router/index.js:174:3)
+    at router (/home/sangeet/flash-cards-master/node_modules/express/lib/router/index.js:47:12)
+    at Layer.handle [as handle_request] (/home/sangeet/flash-cards-master/node_modules/express/lib/router/layer.js:95:5)
+    at trim_prefix (/home/sangeet/flash-cards-master/node_modules/express/lib/router/index.js:317:13)
+    at /home/sangeet/flash-cards-master/node_modules/express/lib/router/index.js:284:7
+    at Function.process_params (/home/sangeet/flash-cards-master/node_modules/express/lib/router/index.js:335:12)
+    at next (/home/sangeet/flash-cards-master/node_modules/express/lib/router/index.js:275:10)
+    at /home/sangeet/flash-cards-master/node_modules/express/lib/router/index.js:635:15
+{"res":{"statusCode":401},"req":{"url":"/api/v1/authenticate","headers":{"host":"localhost:8091","connection":"keep-alive","content-length":"48","accept":"application/json, text/plain, */*","origin":"http://localhost:8091","user-agent":"Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/60.0.3112.113 Safari/537.36","content-type":"application/json;charset=UTF-8","dnt":"1","referer":"http://localhost:8091/","accept-encoding":"gzip, deflate, br","accept-language":"en-GB,en-US;q=0.8,en;q=0.6","cookie":"username-localhost-8888=\"2|1:0|10:1521086291|23:username-localhost-8888|44:NGQyZTVlMzg3MjUxNDBjZGIzZTRmMWM0YTkyYzZiNzQ=|743ef1907d37d7e063d74303092f064933c39dfc60d0dc29e1f518f560dd46fd\""},"method":"POST","httpVersion":"1.1","originalUrl":"/api/v1/authenticate","query":{}},"responseTime":3,"level":"info","message":"HTTP POST /api/v1/authenticate","timestamp":"2018-03-25T05:33:05.202Z"}
+2018-03-25T05:33:15.105Z - error: { [CustomError: Incorrect username and password]
+  errorCode: 401,
+  name: 'CustomError',
+  message: 'Incorrect username and password',
+  extra: { metaData: undefined } } , metaData=undefined, stact=CustomError: Incorrect username and password
+    at authenticate (/home/sangeet/flash-cards-master/controllers/v1/auth_controller.js:21:50)
+    at Layer.handle [as handle_request] (/home/sangeet/flash-cards-master/node_modules/express/lib/router/layer.js:95:5)
+    at next (/home/sangeet/flash-cards-master/node_modules/express/lib/router/route.js:137:13)
+    at Route.dispatch (/home/sangeet/flash-cards-master/node_modules/express/lib/router/route.js:112:3)
+    at Layer.handle [as handle_request] (/home/sangeet/flash-cards-master/node_modules/express/lib/router/layer.js:95:5)
+    at /home/sangeet/flash-cards-master/node_modules/express/lib/router/index.js:281:22
+    at Function.process_params (/home/sangeet/flash-cards-master/node_modules/express/lib/router/index.js:335:12)
+    at next (/home/sangeet/flash-cards-master/node_modules/express/lib/router/index.js:275:10)
+    at Function.handle (/home/sangeet/flash-cards-master/node_modules/express/lib/router/index.js:174:3)
+    at router (/home/sangeet/flash-cards-master/node_modules/express/lib/router/index.js:47:12)
+    at Layer.handle [as handle_request] (/home/sangeet/flash-cards-master/node_modules/express/lib/router/layer.js:95:5)
+    at trim_prefix (/home/sangeet/flash-cards-master/node_modules/express/lib/router/index.js:317:13)
+    at /home/sangeet/flash-cards-master/node_modules/express/lib/router/index.js:284:7
+    at Function.process_params (/home/sangeet/flash-cards-master/node_modules/express/lib/router/index.js:335:12)
+    at next (/home/sangeet/flash-cards-master/node_modules/express/lib/router/index.js:275:10)
+    at /home/sangeet/flash-cards-master/node_modules/express/lib/router/index.js:635:15
+{"res":{"statusCode":401},"req":{"url":"/api/v1/authenticate","headers":{"host":"localhost:8091","connection":"keep-alive","content-length":"56","accept":"application/json, text/plain, */*","origin":"http://localhost:8091","user-agent":"Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/60.0.3112.113 Safari/537.36","content-type":"application/json;charset=UTF-8","dnt":"1","referer":"http://localhost:8091/","accept-encoding":"gzip, deflate, br","accept-language":"en-GB,en-US;q=0.8,en;q=0.6","cookie":"username-localhost-8888=\"2|1:0|10:1521086291|23:username-localhost-8888|44:NGQyZTVlMzg3MjUxNDBjZGIzZTRmMWM0YTkyYzZiNzQ=|743ef1907d37d7e063d74303092f064933c39dfc60d0dc29e1f518f560dd46fd\""},"method":"POST","httpVersion":"1.1","originalUrl":"/api/v1/authenticate","query":{}},"responseTime":3,"level":"info","message":"HTTP POST /api/v1/authenticate","timestamp":"2018-03-25T05:33:15.107Z"}
+2018-03-25T05:34:08.360Z - info: Server started at port: 8091 with url: http://localhost:8091/
+{"res":{"statusCode":200},"req":{"url":"/api/v1/authenticate","headers":{"host":"localhost:8091","connection":"keep-alive","content-length":"47","accept":"application/json, text/plain, */*","origin":"http://localhost:8091","user-agent":"Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/60.0.3112.113 Safari/537.36","content-type":"application/json;charset=UTF-8","dnt":"1","referer":"http://localhost:8091/","accept-encoding":"gzip, deflate, br","accept-language":"en-GB,en-US;q=0.8,en;q=0.6","cookie":"username-localhost-8888=\"2|1:0|10:1521086291|23:username-localhost-8888|44:NGQyZTVlMzg3MjUxNDBjZGIzZTRmMWM0YTkyYzZiNzQ=|743ef1907d37d7e063d74303092f064933c39dfc60d0dc29e1f518f560dd46fd\""},"method":"POST","httpVersion":"1.1","originalUrl":"/api/v1/authenticate","query":{}},"responseTime":2,"level":"info","message":"HTTP POST /api/v1/authenticate","timestamp":"2018-03-25T05:34:22.151Z"}
+{"res":{"statusCode":200},"req":{"url":"/api/v1/cards?currentPage=1&pageSize=4","headers":{"host":"localhost:8091","connection":"keep-alive","accept":"application/json, text/plain, */*","x-access-token":"sangeetmoydas","user-agent":"Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/60.0.3112.113 Safari/537.36","dnt":"1","referer":"http://localhost:8091/","accept-encoding":"gzip, deflate, br","accept-language":"en-GB,en-US;q=0.8,en;q=0.6","cookie":"username-localhost-8888=\"2|1:0|10:1521086291|23:username-localhost-8888|44:NGQyZTVlMzg3MjUxNDBjZGIzZTRmMWM0YTkyYzZiNzQ=|743ef1907d37d7e063d74303092f064933c39dfc60d0dc29e1f518f560dd46fd\""},"method":"GET","httpVersion":"1.1","originalUrl":"/api/v1/cards?currentPage=1&pageSize=4","query":{"currentPage":"1","pageSize":"4"}},"responseTime":59,"level":"info","message":"HTTP GET /api/v1/cards?currentPage=1&pageSize=4","timestamp":"2018-03-25T05:34:22.307Z"}
+{"res":{"statusCode":200},"req":{"url":"/api/v1/cards/random","headers":{"host":"localhost:8091","connection":"keep-alive","accept":"application/json, text/plain, */*","x-access-token":"sangeetmoydas","user-agent":"Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/60.0.3112.113 Safari/537.36","dnt":"1","referer":"http://localhost:8091/","accept-encoding":"gzip, deflate, br","accept-language":"en-GB,en-US;q=0.8,en;q=0.6","cookie":"username-localhost-8888=\"2|1:0|10:1521086291|23:username-localhost-8888|44:NGQyZTVlMzg3MjUxNDBjZGIzZTRmMWM0YTkyYzZiNzQ=|743ef1907d37d7e063d74303092f064933c39dfc60d0dc29e1f518f560dd46fd\""},"method":"GET","httpVersion":"1.1","originalUrl":"/api/v1/cards/random","query":{}},"responseTime":5,"level":"info","message":"HTTP GET /api/v1/cards/random","timestamp":"2018-03-25T05:34:30.849Z"}
+{"res":{"statusCode":200},"req":{"url":"/api/v1/cards?currentPage=1&pageSize=4","headers":{"host":"localhost:8091","connection":"keep-alive","accept":"application/json, text/plain, */*","x-access-token":"sangeetmoydas","user-agent":"Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/60.0.3112.113 Safari/537.36","dnt":"1","referer":"http://localhost:8091/","accept-encoding":"gzip, deflate, br","accept-language":"en-GB,en-US;q=0.8,en;q=0.6","cookie":"username-localhost-8888=\"2|1:0|10:1521086291|23:username-localhost-8888|44:NGQyZTVlMzg3MjUxNDBjZGIzZTRmMWM0YTkyYzZiNzQ=|743ef1907d37d7e063d74303092f064933c39dfc60d0dc29e1f518f560dd46fd\""},"method":"GET","httpVersion":"1.1","originalUrl":"/api/v1/cards?currentPage=1&pageSize=4","query":{"currentPage":"1","pageSize":"4"}},"responseTime":29,"level":"info","message":"HTTP GET /api/v1/cards?currentPage=1&pageSize=4","timestamp":"2018-03-25T05:34:36.878Z"}
